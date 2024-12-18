@@ -1,0 +1,22 @@
+{
+  "name": "@abroad/apis",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    ".": "./src/apis/index.ts",
+    "./hooks": "./src/hooks/index.ts",
+    "./libs": "./src/libs/index.ts"
+  },
+  "scripts": {
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.62.7",
+    "axios": "^1.7.7",
+    "sonner": "^1.5.0"
+  },
+  "devDependencies": {
+    "@abroad/types": "workspace:*",
+    "@abroad/typescript-config": "workspace:*",
+    "@types/node": "^22.10.2"
+  }
+}

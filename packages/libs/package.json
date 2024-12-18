@@ -1,0 +1,13 @@
+{
+  "name": "@abroad/libs",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "devDependencies": {
+    "@abroad/typescript-config": "workspace:*",
+    "@abroad/types": "workspace:*",
+    "@types/node": "^22.10.2"
+  }
+}

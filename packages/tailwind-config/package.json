@@ -2,11 +2,23 @@
   "name": "@abroad/tailwind-config",
   "version": "0.0.0",
   "private": true,
-  "files": [
-    "tailwind.config.js",
-    "postcss.config.js",
-    "globals.css"
-  ],
+  "exports": {
+    "./postcss.config": "./postcss.config.js",
+    "./tailwind.config": "./tailwind.config.js",
+    "./globals.css": "./globals.css",
+
+    "./default.css": "./src/default.css",
+    "./editor.css": "./src/editor.css",
+    "./player.css": "./src/player.css",
+    "./themes/zinc.css": "./src/themes/zinc.css",
+    "./themes/red.css": "./src/themes/red.css",
+    "./themes/rose.css": "./src/themes/zinc.css",
+    "./themes/orange.css": "./src/themes/orange.css",
+    "./themes/green.css": "./src/themes/green.css",
+    "./themes/blue.css": "./src/themes/blue.css",
+    "./themes/yellow.css": "./src/themes/yellow.css",
+    "./themes/violet.css": "./src/themes/violet.css"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",

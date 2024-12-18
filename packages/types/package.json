@@ -1,0 +1,9 @@
+{
+  "name": "@abroad/types",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./models": "./src/models/index.ts"
+  }
+}

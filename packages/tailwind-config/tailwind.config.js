@@ -3,8 +3,8 @@ module.exports = {
   safelist: ["dark"],
   darkMode: ["class"],
   content: [
-    "./src/**/*.{ts,tsx}",
-    "../../packages/ui/src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "../../../packages/ui/src/**/*.{js,ts,jsx,tsx}",
   ],
   prefix: "",
   theme: {

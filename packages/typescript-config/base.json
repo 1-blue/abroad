@@ -15,10 +15,6 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "ES2022",
-    "paths": {
-      "#one/*": ["../../apps/one/src/*"],
-      "#ui/*": ["../../packages/ui/src/*"]
-    }
+    "target": "ES2022"
   }
 }
