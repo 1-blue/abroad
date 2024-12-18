@@ -8,7 +8,6 @@ import "@abroad/tailwind-config/themes/violet.css";
 import Header from "#/components/layouts/Header";
 import Main from "#/components/layouts/Main";
 import Footer from "#/components/layouts/Footer";
-import { getSharedMetadata } from "#/lib/sharedMetadata";
 
 const pretendard = localFont({
   src: "../../public/fonts/PretendardVariable.woff2",
@@ -17,7 +16,7 @@ const pretendard = localFont({
   variable: "--font-pretendard",
 });
 
-export const metadata: Metadata = getSharedMetadata();
+// export const metadata: Metadata = getSharedMetadata();
 
 export default function RootLayout({
   children,
@@ -47,7 +46,7 @@ export default function RootLayout({
           }}
         />
 
-        <Header />
+        {/* <Header /> */}
         <Main>{children}</Main>
         <Footer />
       </body>
