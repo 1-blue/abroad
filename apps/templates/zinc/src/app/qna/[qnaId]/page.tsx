@@ -5,7 +5,7 @@ import { getSharedMetadata } from "#/lib/sharedMetadata";
 
 import QNADetailPage from "#/app/qna/[qnaId]/_components/QNADetailPage";
 
-export const metadata: Metadata = getSharedMetadata({ title: "Q&A" });
+// export const metadata: Metadata = getSharedMetadata({ title: "Q&A" });
 
 interface Props {
   params: {

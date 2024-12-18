@@ -5,7 +5,7 @@ import { getSharedMetadata } from "#/lib/sharedMetadata";
 
 import EditPage from "#/app/videos/(create-and-edit)/edit/[videoId]/_components/EditPage";
 
-export const metadata: Metadata = getSharedMetadata({ title: "수업영상 수정" });
+// export const metadata: Metadata = getSharedMetadata({ title: "수업영상 수정" });
 
 interface IProps {
   params: { videoId: string };

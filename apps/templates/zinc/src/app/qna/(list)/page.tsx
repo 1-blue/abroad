@@ -9,7 +9,7 @@ import QNAListSkeleton from "#/app/qna/(list)/_components/Section2/QNAListSkelet
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = getSharedMetadata({ title: "Q&A" });
+// export const metadata: Metadata = getSharedMetadata({ title: "Q&A" });
 
 const Page: NextPage = async () => {
   return (

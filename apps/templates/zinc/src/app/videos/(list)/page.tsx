@@ -9,7 +9,7 @@ import VideoListSkeleton from "#/app/videos/(list)/_components/Section2/VideoLis
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = getSharedMetadata({ title: "수업영상" });
+// export const metadata: Metadata = getSharedMetadata({ title: "수업영상" });
 
 const Page: NextPage = () => {
   return (

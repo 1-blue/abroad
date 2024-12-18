@@ -6,7 +6,7 @@ import IntroSection from "#/app/teacher/_components/Section1/IntroSection";
 import PointSection from "#/app/teacher/_components/Section2/PointSection";
 import AboutSection from "#/app/teacher/_components/Section3/AboutSection";
 
-export const metadata: Metadata = getSharedMetadata({ title: "강사소개" });
+// export const metadata: Metadata = getSharedMetadata({ title: "강사소개" });
 
 const Page: NextPage = () => {
   return (

@@ -4,7 +4,7 @@ import { getSharedMetadata } from "#/lib/sharedMetadata";
 
 import WriteForm from "#/app/qna/(create-and-edit)/_components/WriteForm";
 
-export const metadata: Metadata = getSharedMetadata({ title: "Q&A 수정" });
+// export const metadata: Metadata = getSharedMetadata({ title: "Q&A 수정" });
 
 interface IProps {
   params: { qnaId: string };
