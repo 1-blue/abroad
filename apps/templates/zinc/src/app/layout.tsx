@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 
 import { Toaster } from "@abroad/ui";
 import { cn } from "@abroad/ui/libs";
+import "@abroad/tailwind-config/themes/themes.css";
 
 import TanstackQueryProvider from "#/providers/TanstackQueryProvider";
 
