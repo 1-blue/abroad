@@ -19,7 +19,7 @@ const pretendard = localFont({
   variable: "--font-pretendard",
 });
 
-export const metadata: Metadata = getSharedMetadata();
+// export const metadata: Metadata = getSharedMetadata();
 
 export default function RootLayout({
   children,
