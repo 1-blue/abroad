@@ -14,7 +14,7 @@ export const generateBaseMetadata = ({
   keywords,
   images,
   siteName = description,
-  baseURL = process.env.NEXT_PUBLIC_CLIENT_URL!,
+  baseURL = "",
 }: IGetSharedMetadataArgs) => ({
   metadataBase: new URL(baseURL),
   title,

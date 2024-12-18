@@ -5,8 +5,6 @@ import { Toaster } from "@abroad/ui";
 import { cn } from "@abroad/ui/libs";
 import "@abroad/tailwind-config/themes/violet.css";
 
-import TanstackQueryProvider from "#/providers/TanstackQueryProvider";
-
 import Header from "#/components/layouts/Header";
 import Main from "#/components/layouts/Main";
 import Footer from "#/components/layouts/Footer";
@@ -36,24 +34,22 @@ export default function RootLayout({
           "flex min-h-screen flex-col",
         )}
       >
-        <TanstackQueryProvider>
-          <Toaster
-            position="top-center"
-            theme="light"
-            richColors
-            closeButton
-            toastOptions={{
-              classNames: {
-                title: "whitespace-pre-line",
-                description: "whitespace-pre-line",
-              },
-            }}
-          />
+        <Toaster
+          position="top-center"
+          theme="light"
+          richColors
+          closeButton
+          toastOptions={{
+            classNames: {
+              title: "whitespace-pre-line",
+              description: "whitespace-pre-line",
+            },
+          }}
+        />
 
-          <Header />
-          <Main>{children}</Main>
-          <Footer />
-        </TanstackQueryProvider>
+        <Header />
+        <Main>{children}</Main>
+        <Footer />
       </body>
     </html>
   );
