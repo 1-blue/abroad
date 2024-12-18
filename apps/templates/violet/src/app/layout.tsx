@@ -36,24 +36,24 @@ export default function RootLayout({
           "flex min-h-screen flex-col",
         )}
       >
-        <TanstackQueryProvider>
-          <Toaster
-            position="top-center"
-            theme="light"
-            richColors
-            closeButton
-            toastOptions={{
-              classNames: {
-                title: "whitespace-pre-line",
-                description: "whitespace-pre-line",
-              },
-            }}
-          />
+        {/* <TanstackQueryProvider> */}
+        <Toaster
+          position="top-center"
+          theme="light"
+          richColors
+          closeButton
+          toastOptions={{
+            classNames: {
+              title: "whitespace-pre-line",
+              description: "whitespace-pre-line",
+            },
+          }}
+        />
 
-          {/* <Header /> */}
-          <Main>{children}</Main>
-          <Footer />
-        </TanstackQueryProvider>
+        {/* <Header /> */}
+        <Main>{children}</Main>
+        <Footer />
+        {/* </TanstackQueryProvider> */}
       </body>
     </html>
   );
