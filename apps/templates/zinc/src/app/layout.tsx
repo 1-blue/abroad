@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 
 import { Toaster } from "@abroad/ui";
 import { cn } from "@abroad/ui/libs";
-import "@abroad/tailwind-config/themes/themes.css";
+import "@abroad/tailwind-config/themes.css";
 
 import TanstackQueryProvider from "#/providers/TanstackQueryProvider";
 
@@ -26,7 +26,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const theme = process.env.NEXT_PUBLIC_THEME || "blue";
+  const theme = process.env.NEXT_PUBLIC_THEME || "zinc";
 
   return (
     <html lang="ko" data-theme={theme}>

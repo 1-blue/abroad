@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "msw": "npx tsx watch ./src/__mocks__/msw/http.ts",
-    "dev": "next dev -p 8004",
+    "dev": "next dev -p 4000",
     "build": "next build",
-    "start": "next start -p 8004",
+    "start": "next start -p 4000",
     "lint": "next lint"
   },
   "dependencies": {
