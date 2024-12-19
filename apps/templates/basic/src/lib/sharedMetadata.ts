@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 
-import { generateBaseMetadata } from "@abroad/libs";
-
 const sharedTitle: Metadata["title"] = {
   template: "The Six-백정현 | %s",
   default: "The Six-백정현",
@@ -18,7 +16,7 @@ const sharedImages = ["/images/main.png"];
 const sharedSiteName = "The Six-백정현";
 
 interface IGetSharedMetadataArgs {
-  title?: Metadata["title"];
+  title?: Exclude<Metadata["title"], null>;
   description?: string;
   keywords?: string[];
   images?: string[];
@@ -33,11 +31,25 @@ export const getSharedMetadata = ({
   keywords = sharedKeywords,
   images = sharedImages,
   siteName = sharedSiteName,
-}: IGetSharedMetadataArgs = {}): Metadata =>
-  generateBaseMetadata({
+}: IGetSharedMetadataArgs = {}): Metadata => ({
+  metadataBase: new URL(process.env.NEXT_PUBLIC_CLIENT_URL),
+  title,
+  description,
+  keywords,
+  openGraph: {
     title,
     description,
-    keywords,
     images,
+    type: "website",
+    url: process.env.NEXT_PUBLIC_CLIENT_URL,
     siteName,
-  });
+    locale: "ko_KR",
+    countryName: "Korea",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images,
+  },
+});
